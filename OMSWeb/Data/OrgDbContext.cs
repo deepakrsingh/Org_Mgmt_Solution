@@ -12,7 +12,7 @@ public class OrgDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Person>()
-            .ToTable("Persons");
+            .ToTable("Persons", schema: "Person");
 
         base.OnModelCreating(modelBuilder);
     }
