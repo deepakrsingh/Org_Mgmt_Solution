@@ -7,12 +7,12 @@ public class OrgDbContext : DbContext
 {
     public OrgDbContext(DbContextOptions<OrgDbContext> options) : base(options) { }
 
-    public DbSet<Employee> Employees { get; set; }
+    public DbSet<Person> Persons { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Employee>()
-            .ToTable("Employees");
+        modelBuilder.Entity<Person>()
+            .ToTable("Persons");
 
         base.OnModelCreating(modelBuilder);
     }
