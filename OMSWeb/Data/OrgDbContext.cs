@@ -1,19 +1,19 @@
-﻿using Microsoft.EntityFrameworkCore;
-using OMSWeb.Modelsl;
+﻿//using Microsoft.EntityFrameworkCore;
+//using OMSWeb.Modelsl;
 
-namespace OMSWeb.Data;
+//namespace OMSWeb.Data;
 
-public class OrgDbContext : DbContext
-{
-    public OrgDbContext(DbContextOptions<OrgDbContext> options) : base(options) { }
+//public class OrgDbContext : DbContext
+//{
+//    public OrgDbContext(DbContextOptions<OrgDbContext> options) : base(options) { }
 
-    public DbSet<Person> Persons { get; set; }
+//    public DbSet<Person> Persons { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<Person>()
-            .ToTable("Persons", schema: "Person");
+//    protected override void OnModelCreating(ModelBuilder modelBuilder)
+//    {
+//        modelBuilder.Entity<Person>()
+//            .ToTable("Persons", schema: "Person");
 
-        base.OnModelCreating(modelBuilder);
-    }
-}
+//        base.OnModelCreating(modelBuilder);
+//    }
+//}

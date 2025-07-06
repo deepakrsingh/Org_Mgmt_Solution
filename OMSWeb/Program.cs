@@ -1,12 +1,12 @@
-using Microsoft.EntityFrameworkCore;
-using OMSWeb.Data;
+//using Microsoft.EntityFrameworkCore;
+//using OMSWeb.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<OrgDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+//builder.Services.AddDbContext<OrgDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

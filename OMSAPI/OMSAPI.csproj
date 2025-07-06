@@ -11,8 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OMS.Common\OMS.Common.csproj" />
-    <ProjectReference Include="..\OMS.core\OMS.core.csproj" />
+    <ProjectReference Include="..\OMS.Common\OMS.Models.csproj" />
+    <ProjectReference Include="..\OMS.core\OMS.Core.csproj" />
+    <ProjectReference Include="..\OMS.Repositories\OMS.Repository.csproj" />
   </ItemGroup>
 
 </Project>
